@@ -7,7 +7,6 @@ void intercambio(float &x, float &y){
 	aux =x;
 	x=y;
 	y=aux;
-	
 }
 
 void quickSort(float a[], int primero, int ultimo){
@@ -17,9 +16,6 @@ void quickSort(float a[], int primero, int ultimo){
 	pivote= a[central];
 	i= primero;
 	j=ultimo;
-/*	for(int c=0; c<=a[10]; c++){
-     cout<<a[c];	
-	}*/
 	do{
 		cout<<"\ni="<<i<<"\nj="<<j<<"\npivote="<<pivote<<"\n";
 		while(a[i]<pivote)i++;
@@ -28,9 +24,8 @@ void quickSort(float a[], int primero, int ultimo){
 		if(i<=j){
 			intercambio(a[i],a[j]);
 			i++;
-			j--;	
+			j--;
 		}
-		
 	}while(i<=j);
 	if(primero<j){
 		quickSort(a, primero,j);
